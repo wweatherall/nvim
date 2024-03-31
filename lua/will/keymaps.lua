@@ -1,5 +1,6 @@
 vim.keymap.set("n", "<leader>w", ":w<cr>", { desc = "Save" })
 vim.keymap.set({ "n", "i" }, "<F2>", "<esc>:w<cr>", { desc = "Save" })
+vim.keymap.set({ "v", "n", "i" }, "<leader>q", "<esc>:q<cr>", { desc = "Save" })
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "Tree" })
 vim.keymap.set("n", "<leader>u", ":Neotree toggle<cr>", { desc = "Tree" })
