@@ -1,7 +1,7 @@
 vim.keymap.set("n", "<leader>w", ":w<cr>", { desc = "Save" })
 vim.keymap.set({ "n", "i" }, "<F2>", "<esc>:w<cr>", { desc = "Save" })
 
-vim.keymap.set("n", "<leader>e", ":Ex<cr>", { desc = "Tree" })
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "Tree" })
 
 --vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 --vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
