@@ -37,7 +37,7 @@ require("lazy").setup({
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<C-y>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-					["<S-CR>"] = cmp.mapping.confirm({
+					["<tab>"] = cmp.mapping.confirm({
 						behavior = cmp.ConfirmBehavior.Replace,
 						select = true,
 					}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -52,17 +52,6 @@ require("lazy").setup({
 				}, {
 					{ name = "buffer" },
 				}),
-				--[[
-         [formatting = {
-         [  format = function(_, item)
-         [    --local icons = require("lazyvim.config").icons.kinds
-         [    if icons[item.kind] then
-         [      item.kind = icons[item.kind] .. item.kind
-         [    end
-         [    return item
-         [  end,
-         [},
-	 ]]
 				experimental = {
 					ghost_text = {
 						hl_group = "CmpGhostText",
